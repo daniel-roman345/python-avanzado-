@@ -1,0 +1,15 @@
+Capturas solicitadas en la evidencia EV09:
+  01-estructura-proyecto.png -> arbol de carpetas del proyecto
+  02-base-datos.png          -> tabla users vista en DB Browser / extension SQLite
+  03-swagger-ui.png          -> /docs completo
+  04-post-users.png          -> POST /users (201)
+  05-post-email-duplicado.png-> POST correo repetido (400)
+  06-get-users.png           -> GET /users
+  07-get-user-id.png         -> GET /users/1
+  08-get-user-404.png        -> GET /users/99 (404)
+  09-filtro-role.png         -> GET /users?role=admin
+  10-filtro-activos.png      -> GET /users?is_active=true
+  11-put-user.png            -> PUT /users/2 (200)
+  12-patch-user.png          -> PATCH /users/3 (200)
+  13-delete-user.png         -> DELETE /users/4
+  14-validar-eliminado.png   -> GET del usuario eliminado (404)

@@ -1,0 +1,9 @@
+Guarda aqui las capturas solicitadas en la evidencia:
+  01-swagger-ui.png     -> pantalla completa de /docs
+  02-get-users.png      -> respuesta de GET /users
+  03-get-user-id.png    -> respuesta de GET /users/1
+  04-get-user-404.png   -> respuesta de GET /users/99 (404)
+  05-post-users.png     -> respuesta de POST /users (201)
+  06-post-duplicado.png -> POST con correo repetido (400)
+  07-post-invalido.png  -> POST con datos invalidos (422)
+  08-headers.png        -> cabeceras X-App-Name y X-API-Version

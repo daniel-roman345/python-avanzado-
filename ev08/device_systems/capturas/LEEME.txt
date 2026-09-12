@@ -1,0 +1,13 @@
+Capturas solicitadas en la evidencia EV08:
+  01-swagger-ui.png        -> /docs completo
+  02-redoc.png             -> /redoc
+  03-get-users.png         -> GET /users
+  04-get-user-id.png       -> GET /users/2
+  05-post-users.png        -> POST /users (201)
+  06-put-user.png          -> PUT /users/2 (200)
+  07-patch-user.png        -> PATCH /users/3 (200)
+  08-delete-user.png       -> DELETE /users/4
+  09-error-404.png         -> GET /users/99 (404)
+  10-error-400-patch.png   -> PATCH con cuerpo vacio (400)
+  11-error-400-email.png   -> POST correo duplicado (400)
+  12-error-422.png         -> POST datos invalidos (422)
