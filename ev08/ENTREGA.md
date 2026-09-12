@@ -17,9 +17,9 @@
 | 8 | Dependency Injection con `Depends()` | `app/dependencies/user_dependencies.py` | Listo |
 | 9 | Documentacion Swagger/OpenAPI mejorada (tags, summary, description) | `app/main.py` y rutas | Listo |
 | 10 | README.md completo | `device_systems/README.md` | Listo |
-| 11 | Capturas de Swagger UI y ReDoc + pruebas de cada endpoint y de errores | `device_systems/capturas/` | **Pendiente: tomarlas** |
+| 11 | Capturas de Swagger UI y ReDoc + pruebas de cada endpoint y de errores | `evidencia/capturas/` | Listo |
 
-## Lo unico que falta hacer manualmente
+## Como ejecutar el proyecto
 
 ```bash
 cd ev08/device_systems
@@ -27,8 +27,9 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-Tomar las 12 capturas listadas en `device_systems/capturas/LEEME.txt`
-(incluye `/docs`, `/redoc`, los 6 metodos y los 4 escenarios de error).
+Las 12 capturas de evidencia ya estan en `evidencia/capturas/` (incluye `/docs`,
+`/redoc`, los 6 metodos y los 4 escenarios de error) y se explican en
+`evidencia/EVIDENCIA.md`.
 
 ## Guion para la socializacion (5 minutos)
 

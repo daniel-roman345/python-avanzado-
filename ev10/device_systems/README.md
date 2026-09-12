@@ -70,7 +70,6 @@ device_systems/
 │   │   │── e61a53a3b60c_create_devices_and_loans_tables.py
 │
 │── alembic.ini
-│── capturas/
 │── seed.py
 │── requirements.txt
 │── README.md
@@ -468,27 +467,27 @@ HTTP 200
 
 ## 13. Capturas
 
-> Guarda las imagenes en `capturas/` con estos nombres.
+> Las capturas estan en la carpeta `../evidencia/capturas/`.
 
 | Evidencia | Captura |
 |---|---|
-| `alembic init alembic` | ![init](capturas/01-alembic-init.png) |
-| `alembic revision --autogenerate` | ![revision](capturas/02-alembic-revision.png) |
-| `alembic upgrade head` | ![upgrade](capturas/03-alembic-upgrade.png) |
-| `alembic history` | ![history](capturas/04-alembic-history.png) |
-| Tablas generadas (`users`, `devices`, `loans`) | ![tablas](capturas/05-tablas-generadas.png) |
-| Swagger UI con los 3 tags | ![swagger](capturas/06-swagger-ui.png) |
-| Crear usuario | ![usuario](capturas/07-crear-usuario.png) |
-| Crear dispositivo | ![dispositivo](capturas/08-crear-dispositivo.png) |
-| Crear prestamo | ![prestamo](capturas/09-crear-prestamo.png) |
-| Prestamo de dispositivo no disponible (409) | ![409](capturas/10-prestamo-no-disponible.png) |
-| Consulta con joins (`/loans/details`) | ![joins](capturas/11-loans-details.png) |
-| Filtro por estado | ![status](capturas/12-filtro-status.png) |
-| Filtro por tipo de dispositivo | ![tipo](capturas/13-filtro-device-type.png) |
-| Prestamos de un usuario | ![usuario-loans](capturas/14-prestamos-usuario.png) |
-| Devolucion del dispositivo | ![devolucion](capturas/15-devolucion.png) |
-| Dispositivo nuevamente disponible | ![disponible](capturas/16-device-disponible.png) |
-| Historial de prestamos del dispositivo | ![historial](capturas/17-historial-device.png) |
+| `alembic init alembic` | ![init](../evidencia/capturas/01-alembic-init.png) |
+| `alembic revision --autogenerate` | ![revision](../evidencia/capturas/02-alembic-revision.png) |
+| `alembic upgrade head` | ![upgrade](../evidencia/capturas/03-alembic-upgrade.png) |
+| `alembic history` | ![history](../evidencia/capturas/04-alembic-history.png) |
+| Tablas generadas (`users`, `devices`, `loans`) | ![tablas](../evidencia/capturas/05-tablas-generadas.png) |
+| Swagger UI con los 3 tags | ![swagger](../evidencia/capturas/06-swagger-ui.png) |
+| Crear usuario | ![usuario](../evidencia/capturas/07-crear-usuario.png) |
+| Crear dispositivo | ![dispositivo](../evidencia/capturas/08-crear-dispositivo.png) |
+| Crear prestamo | ![prestamo](../evidencia/capturas/09-crear-prestamo.png) |
+| Prestamo de dispositivo no disponible (409) | ![409](../evidencia/capturas/10-prestamo-no-disponible.png) |
+| Consulta con joins (`/loans/details`) | ![joins](../evidencia/capturas/11-loans-details.png) |
+| Filtro por estado | ![status](../evidencia/capturas/12-filtro-status.png) |
+| Filtro por tipo de dispositivo | ![tipo](../evidencia/capturas/13-filtro-device-type.png) |
+| Prestamos de un usuario | ![usuario-loans](../evidencia/capturas/14-prestamos-usuario.png) |
+| Devolucion del dispositivo | ![devolucion](../evidencia/capturas/15-devolucion.png) |
+| Dispositivo nuevamente disponible | ![disponible](../evidencia/capturas/16-device-disponible.png) |
+| Historial de prestamos del dispositivo | ![historial](../evidencia/capturas/17-historial-device.png) |
 
 ## 14. Reflexion sobre migraciones, relaciones y consultas avanzadas
 

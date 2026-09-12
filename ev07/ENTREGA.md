@@ -15,9 +15,9 @@
 | 6 | Response Models | `UserResponse`, `UserListResponse` | Listo |
 | 7 | Cabeceras HTTP personalizadas | Middleware en `app/main.py` (`X-App-Name`, `X-API-Version`) | Listo |
 | 8 | README.md documentado | `device_systems/README.md` | Listo |
-| 9 | Capturas de Swagger UI y pruebas | `device_systems/capturas/` | **Pendiente: tomarlas** |
+| 9 | Capturas de Swagger UI y pruebas | `evidencia/capturas/` + `evidencia/EVIDENCIA.md` | Listo |
 
-## Lo unico que falta hacer manualmente
+## Como ejecutar el proyecto
 
 1. Levantar el servidor:
 
@@ -27,8 +27,8 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-2. Abrir http://127.0.0.1:8000/docs y tomar las capturas indicadas en
-   `device_systems/capturas/LEEME.txt` (8 imagenes).
+2. Abrir http://127.0.0.1:8000/docs. Las 8 capturas de evidencia ya estan
+   generadas en `evidencia/capturas/` y documentadas en `evidencia/EVIDENCIA.md`.
 
 ## Guion para la socializacion (5 minutos)
 

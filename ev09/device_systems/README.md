@@ -58,7 +58,6 @@ device_systems/
 │   │── dependencies/
 │   │   │── database_dependency.py        # get_db() y get_user_or_404()
 │
-│── capturas/
 │── seed.py                               # Carga datos de ejemplo
 │── requirements.txt
 │── README.md
@@ -316,24 +315,24 @@ GET /users/4 -> HTTP 404
 
 ## 14. Capturas
 
-> Guarda las imagenes en `capturas/` con estos nombres.
+> Las capturas estan en la carpeta `../evidencia/capturas/`.
 
 | Evidencia | Captura |
 |---|---|
-| Estructura del proyecto | ![Estructura](capturas/01-estructura-proyecto.png) |
-| Base de datos generada (tabla `users`) | ![BD](capturas/02-base-datos.png) |
-| Swagger UI | ![Swagger](capturas/03-swagger-ui.png) |
-| POST /users (201) | ![POST](capturas/04-post-users.png) |
-| POST email duplicado (400) | ![Duplicado](capturas/05-post-email-duplicado.png) |
-| GET /users | ![GET](capturas/06-get-users.png) |
-| GET /users/{user_id} | ![GET id](capturas/07-get-user-id.png) |
-| GET usuario inexistente (404) | ![404](capturas/08-get-user-404.png) |
-| Filtro por rol | ![Rol](capturas/09-filtro-role.png) |
-| Filtro por estado | ![Activos](capturas/10-filtro-activos.png) |
-| PUT /users/{user_id} | ![PUT](capturas/11-put-user.png) |
-| PATCH /users/{user_id} | ![PATCH](capturas/12-patch-user.png) |
-| DELETE /users/{user_id} | ![DELETE](capturas/13-delete-user.png) |
-| Verificacion del usuario eliminado | ![Verificacion](capturas/14-validar-eliminado.png) |
+| Estructura del proyecto | ![Estructura](../evidencia/capturas/01-estructura-proyecto.png) |
+| Base de datos generada (tabla `users`) | ![BD](../evidencia/capturas/02-base-datos.png) |
+| Swagger UI | ![Swagger](../evidencia/capturas/03-swagger-ui.png) |
+| POST /users (201) | ![POST](../evidencia/capturas/04-post-users.png) |
+| POST email duplicado (400) | ![Duplicado](../evidencia/capturas/05-post-email-duplicado.png) |
+| GET /users | ![GET](../evidencia/capturas/06-get-users.png) |
+| GET /users/{user_id} | ![GET id](../evidencia/capturas/07-get-user-id.png) |
+| GET usuario inexistente (404) | ![404](../evidencia/capturas/08-get-user-404.png) |
+| Filtro por rol | ![Rol](../evidencia/capturas/09-filtro-role.png) |
+| Filtro por estado | ![Activos](../evidencia/capturas/10-filtro-activos.png) |
+| PUT /users/{user_id} | ![PUT](../evidencia/capturas/11-put-user.png) |
+| PATCH /users/{user_id} | ![PATCH](../evidencia/capturas/12-patch-user.png) |
+| DELETE /users/{user_id} | ![DELETE](../evidencia/capturas/13-delete-user.png) |
+| Verificacion del usuario eliminado | ![Verificacion](../evidencia/capturas/14-validar-eliminado.png) |
 
 ## 15. Reflexion final sobre la importancia de la persistencia
 

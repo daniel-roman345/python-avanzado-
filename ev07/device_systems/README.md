@@ -31,7 +31,6 @@ device_systems/
 │   │   │── user_schema.py      # Modelos Pydantic v2 (entrada y salida)
 │   │── routes/
 │   │   │── user_routes.py      # Endpoints GET y POST del recurso users
-│── capturas/                   # Capturas de Swagger UI y pruebas
 │── requirements.txt
 │── README.md
 ```
@@ -256,18 +255,18 @@ HTTP 422
 
 ## 10. Capturas de Swagger UI
 
-> Guarda las imagenes en la carpeta `capturas/` con estos nombres y se veran aqui.
+> Las capturas estan en la carpeta `../evidencia/capturas/`.
 
 | Evidencia | Captura |
 |---|---|
-| Swagger UI completo | ![Swagger UI](capturas/01-swagger-ui.png) |
-| GET /users | ![GET users](capturas/02-get-users.png) |
-| GET /users/{user_id} | ![GET user id](capturas/03-get-user-id.png) |
-| GET usuario inexistente (404) | ![404](capturas/04-get-user-404.png) |
-| POST /users (201) | ![POST users](capturas/05-post-users.png) |
-| POST correo duplicado (400) | ![Duplicado](capturas/06-post-duplicado.png) |
-| POST datos invalidos (422) | ![Invalido](capturas/07-post-invalido.png) |
-| Cabeceras personalizadas | ![Headers](capturas/08-headers.png) |
+| Swagger UI completo | ![Swagger UI](../evidencia/capturas/01-swagger-ui.png) |
+| GET /users | ![GET users](../evidencia/capturas/02-get-users.png) |
+| GET /users/{user_id} | ![GET user id](../evidencia/capturas/03-get-user-id.png) |
+| GET usuario inexistente (404) | ![404](../evidencia/capturas/04-get-user-404.png) |
+| POST /users (201) | ![POST users](../evidencia/capturas/05-post-users.png) |
+| POST correo duplicado (400) | ![Duplicado](../evidencia/capturas/06-post-duplicado.png) |
+| POST datos invalidos (422) | ![Invalido](../evidencia/capturas/07-post-invalido.png) |
+| Cabeceras personalizadas | ![Headers](../evidencia/capturas/08-headers.png) |
 
 ## 11. Reflexion sobre el uso de FastAPI
 

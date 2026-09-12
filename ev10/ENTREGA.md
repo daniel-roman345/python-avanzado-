@@ -20,9 +20,9 @@
 | 10 | Consultas con joins y filtros avanzados | `app/services/loan_service.py`, `device_service.py` | Listo |
 | 11 | Manejo de errores y reglas de negocio (`409 Conflict`) | `app/main.py` y rutas | Listo |
 | 12 | README.md actualizado | `device_systems/README.md` | Listo |
-| 13 | Capturas de Alembic, tablas, Swagger, joins, filtros y devolucion | `device_systems/capturas/` | **Pendiente: tomarlas** |
+| 13 | Capturas de Alembic, tablas, Swagger, joins, filtros y devolucion | `evidencia/capturas/` | Listo |
 
-## Lo unico que falta hacer manualmente
+## Como ejecutar el proyecto
 
 ```bash
 cd ev10/device_systems
@@ -41,7 +41,8 @@ alembic history
 Las migraciones ya estan generadas; si quieres capturar el `revision --autogenerate`
 en vivo, crea un cambio pequeno en un modelo y vuelve a generarla.
 
-Tomar las 17 capturas listadas en `device_systems/capturas/LEEME.txt`.
+Las 17 capturas de evidencia ya estan en `evidencia/capturas/` y se explican en
+`evidencia/EVIDENCIA.md`.
 
 ## Guion para la socializacion (5 minutos)
 

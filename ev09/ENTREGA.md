@@ -18,9 +18,9 @@
 | 9 | Documentacion Swagger/OpenAPI | `/docs` y `/redoc` | Listo |
 | 10 | `requirements.txt` | `device_systems/requirements.txt` | Listo |
 | 11 | README.md actualizado (incluye diferencia modelo vs schema) | `device_systems/README.md` | Listo |
-| 12 | Capturas: estructura, base de datos generada, Swagger y pruebas | `device_systems/capturas/` | **Pendiente: tomarlas** |
+| 12 | Capturas: estructura, base de datos generada, Swagger y pruebas | `evidencia/capturas/` | Listo |
 
-## Lo unico que falta hacer manualmente
+## Como ejecutar el proyecto
 
 ```bash
 cd ev09/device_systems
@@ -32,7 +32,8 @@ uvicorn app.main:app --reload
 - La base `device_systems.db` ya se genera sola (tambien al arrancar la app).
 - Para la captura de la base de datos puedes usar la extension **SQLite Viewer**
   de VS Code o **DB Browser for SQLite**.
-- Tomar las 14 capturas listadas en `device_systems/capturas/LEEME.txt`.
+- Las 14 capturas de evidencia ya estan en `evidencia/capturas/` y se explican en
+  `evidencia/EVIDENCIA.md`.
 
 ## Guion para la socializacion (5 minutos)
 

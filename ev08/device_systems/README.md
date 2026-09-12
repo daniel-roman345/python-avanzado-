@@ -53,7 +53,6 @@ device_systems/
 │   │── data/
 │   │   │── users_db.py                # Base de datos simulada en memoria
 │
-│── capturas/
 │── requirements.txt
 │── README.md
 ```
@@ -307,22 +306,22 @@ HTTP 422
 
 ## 12. Capturas
 
-> Guarda las imagenes en `capturas/` con estos nombres.
+> Las capturas estan en la carpeta `../evidencia/capturas/`.
 
 | Evidencia | Captura |
 |---|---|
-| Swagger UI (/docs) | ![Swagger](capturas/01-swagger-ui.png) |
-| ReDoc (/redoc) | ![ReDoc](capturas/02-redoc.png) |
-| GET /users | ![GET](capturas/03-get-users.png) |
-| GET /users/{user_id} | ![GET id](capturas/04-get-user-id.png) |
-| POST /users (201) | ![POST](capturas/05-post-users.png) |
-| PUT /users/{user_id} (200) | ![PUT](capturas/06-put-user.png) |
-| PATCH /users/{user_id} (200) | ![PATCH](capturas/07-patch-user.png) |
-| DELETE /users/{user_id} | ![DELETE](capturas/08-delete-user.png) |
-| Usuario inexistente (404) | ![404](capturas/09-error-404.png) |
-| PATCH vacio (400) | ![400](capturas/10-error-400-patch.png) |
-| Correo duplicado (400) | ![Duplicado](capturas/11-error-400-email.png) |
-| Datos invalidos (422) | ![422](capturas/12-error-422.png) |
+| Swagger UI (/docs) | ![Swagger](../evidencia/capturas/01-swagger-ui.png) |
+| ReDoc (/redoc) | ![ReDoc](../evidencia/capturas/02-redoc.png) |
+| GET /users | ![GET](../evidencia/capturas/03-get-users.png) |
+| GET /users/{user_id} | ![GET id](../evidencia/capturas/04-get-user-id.png) |
+| POST /users (201) | ![POST](../evidencia/capturas/05-post-users.png) |
+| PUT /users/{user_id} (200) | ![PUT](../evidencia/capturas/06-put-user.png) |
+| PATCH /users/{user_id} (200) | ![PATCH](../evidencia/capturas/07-patch-user.png) |
+| DELETE /users/{user_id} | ![DELETE](../evidencia/capturas/08-delete-user.png) |
+| Usuario inexistente (404) | ![404](../evidencia/capturas/09-error-404.png) |
+| PATCH vacio (400) | ![400](../evidencia/capturas/10-error-400-patch.png) |
+| Correo duplicado (400) | ![Duplicado](../evidencia/capturas/11-error-400-email.png) |
+| Datos invalidos (422) | ![422](../evidencia/capturas/12-error-422.png) |
 
 ## 13. Reflexion final sobre la evolucion del proyecto
 
