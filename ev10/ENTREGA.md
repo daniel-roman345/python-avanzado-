@@ -15,7 +15,7 @@
 | 5 | Modelos `User`, `Device` y `Loan` | `app/models/` | Listo |
 | 6 | Asociaciones (`ForeignKey`, `relationship`, `back_populates`) | `app/models/loan_model.py` | Listo |
 | 7 | Schemas Pydantic de los 3 recursos | `app/schemas/` | Listo |
-| 8 | CRUD de usuarios y dispositivos | `app/routes/user_routes.py`, `device_routes.py` | Listo |
+| 8 | CRUD de usuarios y dispositivos (DELETE con `204 No Content`) | `app/routes/user_routes.py`, `device_routes.py` | Listo |
 | 9 | Gestion de prestamos (crear, devolver, estados) | `app/routes/loan_routes.py` | Listo |
 | 10 | Consultas con joins y filtros avanzados | `app/services/loan_service.py`, `device_service.py` | Listo |
 | 11 | Manejo de errores y reglas de negocio (`409 Conflict`) | `app/main.py` y rutas | Listo |

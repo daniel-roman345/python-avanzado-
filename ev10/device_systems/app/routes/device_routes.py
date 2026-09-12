@@ -16,7 +16,6 @@ from app.schemas.device_schema import (
     DeviceUpdate,
 )
 from app.schemas.loan_schema import LoanDetailListResponse, LoanDetailResponse
-from app.schemas.user_schema import MessageResponse
 from app.services import device_service, loan_service
 
 router = APIRouter(prefix="/devices", tags=["Devices"])
@@ -174,12 +173,12 @@ def actualizar_dispositivo_parcial(
 
 @router.delete(
     "/{device_id}",
-    response_model=MessageResponse,
-    status_code=status.HTTP_200_OK,
+    status_code=status.HTTP_204_NO_CONTENT,
     summary="Eliminar un dispositivo",
     description=(
-        "Elimina un dispositivo. Si el dispositivo esta prestado "
-        "(`is_available = false`) responde 409 Conflict."
+        "Elimina un dispositivo y responde 204 No Content (sin cuerpo). "
+        "Si el dispositivo esta prestado (`is_available = false`) responde "
+        "409 Conflict."
     ),
     response_description="Dispositivo eliminado correctamente",
     responses={**RESPUESTA_404, 409: {"description": "El dispositivo esta prestado"}},
@@ -187,13 +186,12 @@ def actualizar_dispositivo_parcial(
 def eliminar_dispositivo(
     dispositivo: Device = Depends(get_device_or_404),
     db: Session = Depends(get_db),
-) -> MessageResponse:
+) -> Response:
     if not dispositivo.is_available:
         raise HTTPException(
             status_code=status.HTTP_409_CONFLICT,
             detail="No se puede eliminar un dispositivo que esta prestado",
         )
 
-    device_id = dispositivo.id
     device_service.eliminar_dispositivo(db, dispositivo)
-    return MessageResponse(message=f"Dispositivo {device_id} eliminado correctamente")
+    return Response(status_code=status.HTTP_204_NO_CONTENT)

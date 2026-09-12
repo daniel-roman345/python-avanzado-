@@ -222,7 +222,7 @@ users (1) ──────< loans >────── (1) devices
 | `POST` | `/users` | Crea un usuario | `201` / `400` |
 | `PUT` | `/users/{user_id}` | Actualiza completo | `200` / `404` |
 | `PATCH` | `/users/{user_id}` | Actualiza parcial | `200` / `400` / `404` |
-| `DELETE` | `/users/{user_id}` | Elimina | `200` / `404` |
+| `DELETE` | `/users/{user_id}` | Elimina | `204` / `404` |
 
 ### Devices
 
@@ -238,7 +238,7 @@ users (1) ──────< loans >────── (1) devices
 | `POST` | `/devices` | Registra un dispositivo | `201` / `400` |
 | `PUT` | `/devices/{device_id}` | Actualiza completo | `200` / `404` |
 | `PATCH` | `/devices/{device_id}` | Actualiza parcial | `200` / `400` / `404` |
-| `DELETE` | `/devices/{device_id}` | Elimina (si no esta prestado) | `200` / `409` / `404` |
+| `DELETE` | `/devices/{device_id}` | Elimina (si no esta prestado) | `204` / `409` / `404` |
 
 ### Loans
 
@@ -317,7 +317,7 @@ consulta = consulta.where(
 | Registro creado | `201 Created` |
 | Consulta exitosa | `200 OK` |
 | Devolucion exitosa | `200 OK` |
-| Eliminacion exitosa | `200 OK` (con mensaje) |
+| Eliminacion exitosa | `204 No Content` |
 | Recurso no encontrado | `404 Not Found` |
 | Dato duplicado (email / serial) | `400 Bad Request` |
 | Regla de negocio incumplida | `409 Conflict` |

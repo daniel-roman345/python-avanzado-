@@ -8,7 +8,6 @@ from sqlalchemy.orm import Session
 from app.dependencies.database_dependency import get_db, get_user_or_404
 from app.models.user_model import User
 from app.schemas.user_schema import (
-    MessageResponse,
     OrdenUsuarios,
     UserCreate,
     UserListResponse,
@@ -184,17 +183,18 @@ def actualizar_usuario_parcial(
 
 @router.delete(
     "/{user_id}",
-    response_model=MessageResponse,
-    status_code=status.HTTP_200_OK,
+    status_code=status.HTTP_204_NO_CONTENT,
     summary="Eliminar un usuario",
-    description="Elimina el usuario de la base de datos.",
+    description=(
+        "Elimina el usuario de la base de datos y responde 204 No Content "
+        "(sin cuerpo de respuesta)."
+    ),
     response_description="Usuario eliminado correctamente",
     responses=RESPUESTA_404,
 )
 def eliminar_usuario(
     usuario: User = Depends(get_user_or_404),
     db: Session = Depends(get_db),
-) -> MessageResponse:
-    user_id = usuario.id
+) -> Response:
     user_service.eliminar_usuario(db, usuario)
-    return MessageResponse(message=f"Usuario {user_id} eliminado correctamente")
+    return Response(status_code=status.HTTP_204_NO_CONTENT)

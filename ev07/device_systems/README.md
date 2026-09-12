@@ -53,10 +53,10 @@ pip install -r requirements.txt
 Contenido de `requirements.txt`:
 
 ```
-fastapi
-uvicorn[standard]
-pydantic>=2
-email-validator
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+pydantic==2.13.5
+email-validator==2.3.0
 ```
 
 ## 4. Ejecucion del servidor
