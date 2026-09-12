@@ -1,0 +1,18 @@
+Capturas solicitadas en la evidencia EV10:
+  01-alembic-init.png        -> salida de alembic init alembic
+  02-alembic-revision.png    -> alembic revision --autogenerate
+  03-alembic-upgrade.png     -> alembic upgrade head
+  04-alembic-history.png     -> alembic history
+  05-tablas-generadas.png    -> tablas users, devices, loans en la BD
+  06-swagger-ui.png          -> /docs con los tags Users, Devices y Loans
+  07-crear-usuario.png       -> POST /users
+  08-crear-dispositivo.png   -> POST /devices
+  09-crear-prestamo.png      -> POST /loans
+  10-prestamo-no-disponible.png -> POST /loans con dispositivo prestado (409)
+  11-loans-details.png       -> GET /loans/details (join)
+  12-filtro-status.png       -> GET /loans?status=active
+  13-filtro-device-type.png  -> GET /loans/details?device_type=laptop
+  14-prestamos-usuario.png   -> GET /users/1/loans
+  15-devolucion.png          -> PATCH /loans/1/return
+  16-device-disponible.png   -> GET /devices/1 con is_available=true
+  17-historial-device.png    -> GET /devices/1/loans
